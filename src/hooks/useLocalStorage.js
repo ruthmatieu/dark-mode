@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useLocalStorage = (key, initialValue) => {
+export const useLocalStorage = (key, initialValue) => {
 
     const [storedValue, setStoredValue] = useState(() => {
         if (window.localStorage.getItem(key)) {
@@ -17,5 +17,3 @@ const useLocalStorage = (key, initialValue) => {
     
       return [storedValue, setValue];
 }
-
-export default useLocalStorage;
