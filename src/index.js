@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 
 import "./styles.scss";
 
+//composing and sharing non-visual behavior === sharing code between components
+
 const App = () => {
   const [coinData, setCoinData] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
